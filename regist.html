@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Зарегистрируйтесь и начните обучение!</title>
+      <link rel="stylesheet" href="CSS/regist.css">
+      <script>
+         var users = 0;
+         for(i=1;i>0;i++){
+         if(localStorage.getItem(i).length>0){
+         users=i;
+         }
+         else break;
+         }
+         function RegistrationPage() {
+         
+         var result = true;
+         var a = document.forms.RegistrationPage.email.value,
+         b = document.forms.RegistrationPage.username.value,
+         c = document.forms.RegistrationPage.password.value,
+         d = document.forms.RegistrationPage.repassword.value;
+         f = document.forms.RegistrationPage.phone.value;
+         var email_v = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+         var username_v = /^[a-zA-Z0-9_-]+$/;
+         var password_v =  /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+         var repassword_v = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+         if (a == null || a == "" || email_v.test(a) == false) {
+         document.getElementById("email_message").innerHTML = "Email address empty or wrong format";
+         result = false;
+         }
+         
+         if (b == null || b == "" || username_v.test(b) == false) {
+         document.getElementById("username_message").innerHTML = "Please enter the correct information";
+         result = false;
+         }
+         if(c.length<8){
+         document.getElementById("password_message").innerHTML = "Please enter the correct password";
+         result=false;
+         }
+         
+         if(d.length<8||c!==d){
+         document.getElementById("repassword_message").innerHTML = "Please enter the correct password";
+         result=false;
+         }
+         if (result == true) {
+         users++;
+         var user = {Email: a, Name: b, Password: c, enable: true, phone_number: f};
+         localStorage.setItem(users, JSON.stringify(user));
+         document.getElementById("logged").innerHTML = "";
+         document.getElementById("loggeda").style = "display: none";
+         document.getElementById("logout").innerHTML = "Log out "+ JSON.parse(localStorage.getItem(users)).Name;
+         document.getElementById("logoutbut").style = "display: flex";
+         document.getElementById("email_message").innerHTML = "";
+         document.getElementById("repassword_message").innerHTML = "";
+         document.getElementById("password_message").innerHTML = "";
+         document.getElementById("username_message").innerHTML = "";
+         document.getElementById("sign_in_inf").innerHTML = "You are logged";
+         document.getElementById("sign_in_inf").style = "color: green";
+         }
+         }
+      </script>
+   </head>
+   <body>
+      <header>
+         <a href="https://www.udemy.com/"><img class="nav-img" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" width="91" height="34"></a>
+         <ul class="nav-list">
+            <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Категории</a>
+               <div class="dropdown-content">
+                  <a href="#">Разработка</a>
+                  <a href="#">Бизнес</a>
+                  <a href="#">Финансы и бухгалтерский учет</a>
+                  <a href="#">ИТ и ПО</a>
+                  <a href="#">Офисное программное обеспечение</a>
+                  <a href="#">Личностный рост</a>
+                  <a href="#">Дизайн</a>
+                  <a href="#">Маркетинг</a>
+                  <a href="#">Стиль жизни</a>
+                  <a href="#">Фотография и видео</a>
+                  <a href="#">Здоровое и фитнес</a>
+                  <a href="#">Музыка</a>
+                  <a href="#">Учебные и академические дисциплины</a>
+               </div>
+            </li>
+            <li>
+               <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                  <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                     <path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                  </svg>
+               </button>
+               <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+            </li>
+            <li><a class="tooltip" href="https://www.udemy.com/teaching/?ref=teach_header">Преподавайте на Udemy <span><b>Ваши знания станут проводником в мире возможностей и достигнут миллионов.</b><br><input type="button" value="Подробнее"></span></a></li>
+            <li><a class="tooltip-two" href="https://www.udemy.com/cart/"><img src="img/shopping_cart_black_24dp.svg" alt="shop"> <span>Корзина пуста. <br> <br> <b style="color: blueviolet;"> Продолжить поиск</b></span></a></li>
+            <li><button class="white-login"><a href="https://www.udemy.com/join/login-popup/?locale=ru_RU&response_type=html&next=https%3A%2F%2Fwww.udemy.com%2F">Войти</a></button></li>
+            <li><button class="black-registor"><a href="#">Регистрация</a></button></li>
+            <li><button class="language"><img src="img/language_black_24dp.svg" alt="language"></button></li>
+         </ul>
+      </header>
+      <div class="register-item">
+         <h3 style="text-align: center; margin-bottom: 20px;font-size: 22px;">Зарегистрируйтесь и начните обучение!</h3>
+         <hr style="width:400px; margin: auto;" >
+         <div class="input_container">
+            <form id="RegistrationPage" method="post">
+               <div class="input-field">
+                  <input type="text" name="username" required>
+                  <label id="username_message" class="error_message">Username </label>
+               </div>
+               <div class="input-field">
+                  <input type="email" name="email">
+                  <label id="email_message" class="error_message">Email </label>
+               </div>
+               <div class="input-field">
+                  <input type="tel" name="phone">
+                  <label id="phone_number" class="error_message">Phone number </label>
+               </div>
+               <div class="input-field">
+                  <input class="pswrd" type="password" name="password" required>
+                  <span class="show">SHOW</span>
+                  <label id="password_message" class="error_message">Password</label>
+               </div>
+               <div class="input-field">
+                  <input class="pswrd" type="password" name="repassword" required>
+                  <span class="show">SHOW</span>
+                  <label id="repassword_message" class="error_message">Re-password</label>
+               </div>
+               <div>
+                  <p id="sign_in_inf"></p>
+               </div>
+               <div class="button">
+                  <div class="inner"></div>
+                  <input type="button" value="SIGN UP" onclick="RegistrationPage()" style="background-color: #b200de; font-size: 20px; color: white; border: none; padding-top: 10px;">
+               </div>
+            </form>
+         <center>
+            <div id="display" class=result></div>
+         </center>
+      </div>
+   </body>
+</html>

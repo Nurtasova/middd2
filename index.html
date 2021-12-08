@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/main.css">
+      <title>udemy.com</title>
+      <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+   </head>
+   <body>
+      <header>
+           <a href="https://www.udemy.com/"><img class="nav-img" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" width="91" height="34"></a>
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Категории</a>
+                    <div class="dropdown-content">
+                      <a href="#">Разработка</a>
+                      <a href="#">Бизнес</a>
+                      <a href="#">Финансы и бухгалтерский учет</a>
+                      <a href="#">ИТ и ПО</a>
+                      <a href="#">Офисное программное обеспечение</a>
+                      <a href="#">Личностный рост</a>
+                      <a href="#">Дизайн</a>
+                      <a href="#">Маркетинг</a>
+                      <a href="#">Стиль жизни</a>
+                      <a href="#">Фотография и видео</a>
+                      <a href="#">Здоровое и фитнес</a>
+                      <a href="#">Музыка</a>
+                      <a href="#">Учебные и академические дисциплины</a>
+                    </div>
+                  </li>
+                <li><button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                  </button><input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                    </li>
+                <li><a class="tooltip" href="https://www.udemy.com/teaching/?ref=teach_header">Преподавайте на Udemy <span><b>Ваши знания станут проводником в мире возможностей и достигнут миллионов.</b><br><input type="button" value="Подробнее"></span></a></li>
+                <li><a class="tooltip-two" href="https://www.udemy.com/cart/"><img src="img/shopping_cart_black_24dp.svg" alt="shop"> <span>Корзина пуста. <br> <br> <b style="color: blueviolet;"> Продолжить поиск</b></span></a></li>
+                <li><button class="white-login"><a href="https://www.udemy.com/join/login-popup/?locale=ru_RU&response_type=html&next=https%3A%2F%2Fwww.udemy.com%2F">Войти</a></button></li>
+                <li><button class="black-registor"><a href="regist.html">Регистрация</a></button></li>
+                <li><button class="language"><img src="img/language_black_24dp.svg" alt="language"></button></li>
+            </ul>
+      </header>
+      <div class="text-image">
+          <h2>Эффективное обучение</h2>
+          <p>Навыки для светлого будущего. Начните действовать вместе с нами.</p>
+        </div>
+      <img src="img/db24b94e-d190-4d5a-b1dd-958f702cc8f5.jpg" style="margin-bottom: 60px;" width="100%" alt="girl">
+      <div class="news-item__title">
+      <h2>Бальшой выбор курсов</h2>
+         <p>Выбирайте из 183 000 онлайн-видеокурсов; новые курсы добавляются на сайт каждый месяц</p>
+        </div>
+      <section >
+         <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Python')">Python</button>
+            <button class="tablinks" onclick="openCity(event, 'Excel')">Excel</button>
+            <button class="tablinks" onclick="openCity(event, 'Web')">Веб-разработка</button>
+            <button class="tablinks" onclick="openCity(event, 'JavaScripts')">JavaScript</button>
+            <button class="tablinks" onclick="openCity(event, 'Data')">Обработка и анализ данных</button>
+            <button class="tablinks" onclick="openCity(event, 'AWS')">Сертификация AWS</button>
+            <button class="tablinks" onclick="openCity(event, 'Draw')">Рисование</button>
+         </div>
+         
+         <div id="Python" class="tab-info">
+            <h2>Расширьте свои возможности для карьеры в Python</h2>
+            <p>Работая в сфере машинного обучения, финансов, веб-разработки или сбора и анализа данных, вам наверняка пригодятся навыки работы с Python. Простой синтаксис языка Python особенно хорошо подходит для настольных решений, а также для бизнеса и веб. Ключевыми отличиями Python являются...</p>
+            <button><a href="https://www.udemy.com/ru/topic/python/">Изучайте тему Python</a></button>
+         </div>
+         <div id="Excel" class="tab-info">
+            <h2>Анализ и визуализация данных в Excel</h2>
+            <p>Excel — приложение для работы с электронными таблицами, эта программа входит в офисный пакет Microsoft Office и помогает упорядочивать данные. Наличие формул и сводных таблиц помогают бизнесу получать критически важные аналитические данные.</p>
+            <button><a href="https://www.udemy.com/ru/topic/excel/">Изучайте тему Excel</a></button>
+         </div>
+         <div id="Web" class="tab-info">
+            <h2>Создавайте веб-сайты и приложения с навыками веб-разработки</h2>
+            <p>Мир разработки отличается невероятным разнообразием и зачастую связан с интернетом. Большая часть нашей жизни также связана с интернетом, поэтому новые отрасли постоянно стремятся создавать, поддерживать и улучшать сайты и приложения, которые становятся неотъемлемой частью нашей жизни.</p>
+            <button><a href="https://www.udemy.com/ru/topic/web-development/">Изучайте тему Веб-разработка</a></button>
+         </div>
+         <div id="JavaScripts" class="tab-info">
+            <h2>Развивайте свои навыки разработки ПО с JavaScript</h2>
+            <p>JavaScript — один из наиболее распространенных языков программирования в мире, который преимущественно используется для интерактивных веб-приложений. Кроме того, JavaScript хорошо подойдет для начинающих, поскольку с его помощью можно писать код и получать визуальный результат...</p>
+            <button><a href="https://www.udemy.com/ru/topic/javascript/">Изучайте тему JavaScripts</a></button>
+         </div>
+         <div id="Data" class="tab-info">
+            <h2>Изучайте анализ и обработку данных и принимайте взвешенные решения</h2>
+            <p>Анализ и обработка данных начинают проникать во все сферы жизни. Это помогает многим компаниям сокращать ненужные расходы, автоматизировать процессы и анализировать рынки. По большому счету анализ и обработка данных нужны, чтобы выдерживать конкуренцию на глобальном рынке.</p>
+            <button><a href="https://www.udemy.com/ru/topic/data-science/">Изучайте тему Обработка и анализ данных</a></button>
+         </div>
+         <div id="AWS" class="tab-info">
+            <h2>Станьте экспертом в облачных вычислениях с сертификацией AWS</h2>
+            <p>Работая в сфере машинного обучения, финансов, веб-разработки или сбора и анализа данных, вам наверняка пригодятся навыки работы с Python. Простой синтаксис языка Python особенно хорошо подходит для настольных решений, а также для бизнеса и веб. Ключевыми отличиями Python являются...</p>
+            <button><a href="https://www.udemy.com/ru/topic/aws-certification/">Изучайте тему Сертификация AWS</a></button>
+         </div>
+         <div id="Draw" class="tab-info">
+            <h2>Расширьте свои творческие навыки, изучайте рисование</h2>
+            <p>Рисование — это не только фундамент для многих видов изобразительного искусства, но еще и отличный способ для снятия стресса и развития творческих способностей. Рисование также развивает наблюдательность, внимание к мелким деталям и умение самовыражаться.</p>
+            <button><a href="https://www.udemy.com/ru/topic/drawing/">Изучайте тему Рисование</a></button>
+         </div>
+
+      </section>
+
+      <div class="grid-container">
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg" alt="" href="https://www.udemy.com/ru/courses/design/" class="hover-image-scale"><br>
+            <span><b> Дизайн</b></span>
+        </div>
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" alt="" class="hover-image-scale"><br>
+            <span> <b> Разработка</b></span>
+        </div>
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg" alt="" class="hover-image-scale"><br>
+            <span><b>Маркетинг</b></span>
+        </div>
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg" alt="" class="hover-image-scale"><br>
+            <span> <b>ИТ и ПО</b></span>
+        </div>
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg" alt="" class="hover-image-scale"><br>
+            <span> <b>Личностный рост</b></span>
+        </div>
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg" alt="" class="hover-image-scale"><br>
+            <span><b>Бизнес</b></span>
+        </div>
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg" alt="" class="hover-image-scale"><br>
+            <span><b>Фотография</b></span>
+        </div>
+        <div class="hover-image-scale">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg" alt="" class="hover-image-scale"><br>
+            <span><b>Музыка</b></span>
+        </div>
+    </div>
+
+      <div class="fured">
+         <h2 style="margin-bottom: 25px; padding-top: 20px;">Featured topics by category</h2>
+         <div class="row">
+            <div class="column">
+               <h3>Разработка</h3>
+               <a href="https://www.udemy.com/ru/topic/python/">Python</a>
+               <p>Студентов: 32 729 195</p>
+               <a href="https://www.udemy.com/ru/topic/web-development/">Веб-разработка</a>
+               <p>Студентов: 10 352 444</p>
+               <a href="https://www.udemy.com/ru/topic/machine-learning/">Машинное обучение</a>
+               <p>Студентов: 6 465 854</p>
+            </div>
+            <div class="column">
+               <h3>Бизнес</h3>
+               <a href="https://www.udemy.com/ru/topic/financial-analysis/">Финансовый анализ</a>
+               <p>Студентов: 1 118 736</p>
+               <a href="https://www.udemy.com/ru/topic/sql/">SQL</a>
+               <p>Студентов: 5 096 782</p>
+               <a href="https://www.udemy.com/ru/topic/pmp/">PMP</a>
+               <p>Студентов: 1 504 587</p>
+            </div>
+            <div class="column">
+               <h3>ИТ и ПО</h3>
+               <a href="https://www.udemy.com/ru/topic/aws-certification/">Сертификация AWS</a>
+               <p>Студентов: 4 901 922</p>
+               <a href="https://www.udemy.com/ru/topic/ethical-hacking/">Этичный хакинг</a>
+               <p>Студентов: 10 077 806</p>
+               <a href="https://www.udemy.com/ru/topic/cyber-security/">Кибербезопасность</a>
+               <p>Студентов: 3 626 752</p>
+            </div>
+            <div class="column">
+               <h3>Дизайн</h3>
+               <a href="https://www.udemy.com/ru/topic/photoshop/">Photoshop</a>
+               <p>Студентов: 10 303 185</p>
+               <a href="https://www.udemy.com/ru/topic/graphic-design/">Графический дизайн</a>
+               <p>Студентов: 3 151 329</p>
+               <a href="https://www.udemy.com/ru/topic/drawing/">Рисование</a>
+               <p>Студентов: 2 288 718</p>
+            </div>
+         </div>
+         <button class="button-link"><a href="https://www.udemy.com/featured-topics/">Explore more topics</a></button>
+      </div>
+      <article style="height: 560px;">
+      <div class="b-5-info">
+         <img src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg" alt="teaching">
+         <div class="teacher-info">
+            <h1>Станьте преподавателем</h1>
+            <p>Преподаватели со всего мира обучают миллионы студентов на Udemy. Мы даем вам средства преподавать то, что вы любите.</p>
+            <button class="teacher-info-link"><a href="https://www.udemy.com/teaching/?ref=teach_home-body">Начните преподавать сегодня</a></button>
+         </div>
+      </div>
+    </article>
+
+      <article class="link-companies">
+        <h1>Нам доверяют многие компании</h1>
+        <div class="logo-item">
+         <a href="https://www.udemy.com/udemy-business/?locale=ru_RU&path=request-demo-mx%2F&ref=ufb_home-body&utm_campaign=mx-hooks&utm_content=ufb-home-body&utm_medium=referral&utm_source=marketplace&utm_term="><img alt="Apple" width="44" height="44" src="https://s.udemycdn.com/partner-logos/v4/apple-dark.svg"></a>
+         <a href="https://www.udemy.com/udemy-business/?locale=ru_RU&path=request-demo-mx%2F&ref=ufb_home-body&utm_campaign=mx-hooks&utm_content=ufb-home-body&utm_medium=referral&utm_source=marketplace&utm_term="><img alt="Box" width="67" height="44" src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg"></a>
+         <a href="https://www.udemy.com/udemy-business/?locale=ru_RU&path=request-demo-mx%2F&ref=ufb_home-body&utm_campaign=mx-hooks&utm_content=ufb-home-body&utm_medium=referral&utm_source=marketplace&utm_term="><img alt="Volkswagen" width="44" height="44" src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg"></a>
+         <a href="https://www.udemy.com/udemy-business/?locale=ru_RU&path=request-demo-mx%2F&ref=ufb_home-body&utm_campaign=mx-hooks&utm_content=ufb-home-body&utm_medium=referral&utm_source=marketplace&utm_term="><img alt="Netflix" width="101" height="44" src="https://s.udemycdn.com/partner-logos/v4/netflix-dark.svg"></a>
+         <a href="https://www.udemy.com/udemy-business/?locale=ru_RU&path=request-demo-mx%2F&ref=ufb_home-body&utm_campaign=mx-hooks&utm_content=ufb-home-body&utm_medium=referral&utm_source=marketplace&utm_term="><img alt="Eventbrite" width="115" height="44" src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg"></a>
+        </div>
+        </article>
+        
+        <article style="height: 560px;">
+      <div class="b-6-info">
+        <img class="images-item" src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg" alt="studied">
+            <div class="column-info">
+            <img width="300px" src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg" alt="udemy business">
+            <p>Получите неограниченный доступ к более чем 6 000 лучших курсов на Udemy для своей команды. Изучайте и улучшайте навыки в сфере бизнеса, технологий, дизайна и многих других.</p>
+            <button class="teacher-info-links"><a href="https://www.udemy.com/udemy-business/?locale=ru_RU&path=request-demo-mx%2F&ref=ufb_home-body&utm_campaign=mx-hooks&utm_content=ufb-home-body&utm_medium=referral&utm_source=marketplace&utm_term=">Получить Udemy Business</a></button>
+         </div>
+         </div>
+        </article>
+        
+        <article style="height: 520px;">
+      <div class="b-7-info">
+            <img src="https://s.udemycdn.com/home/non-student-cta/transform-1x-v3.jpg" alt="non-student"> 
+         <div class="column-text">
+            <h1>Измените свою жизнь через новые знания</h1>
+            <p>Учащиеся со всего мира осваивают новые профессии, углубляют свои познания в определенных областях и делают свою жизнь ярче.</p>
+            <button class="click"><a href="2Pages/index3.html">Узнайте, как они это делают</a></button>
+         </div>
+      </div>
+    </article>
+      <footer>
+         <!-- Footer main -->
+         <section class="ft-main">
+            <div class="ft-main-item">
+               <ul>
+                  <li><a href="https://www.udemy.com/udemy-business/?locale=ru_RU&mx_pg=home-page&path=%2F&ref=footer">Udemy Business</a></li>
+                  <li><a href="https://www.udemy.com/teaching/?ref=teach_footer">Преподавайте на Udemy</a></li>
+                  <li><a href="https://www.udemy.com/mobile/">Скачать приложение</a></li>
+                  <li><a href="https://about.udemy.com/?locale=ru-ru">О нас</a></li>
+                  <li><a href="https://about.udemy.com/company?locale=ru-ru#offices">Наши координаты</a></li>
+               </ul>
+            </div>
+            <div class="ft-main-item">
+               <ul>
+                  <li><a href="https://about.udemy.com/careers?locale=ru-ru">Карьера</a></li>
+                  <li><a href="https://blog.udemy.com/?ref=footer">Блог</a></li>
+                  <li><a href="https://www.udemy.com/support/">Справка и поддержка</a></li>
+                  <li><a href="https://www.udemy.com/affiliate/">Партнер</a></li>
+                  <li><a href="https://investors.udemy.com/">Инвесторы</a></li>
+               </ul>
+            </div>
+            <div class="ft-main-item">
+               <ul>
+                  <li><a href="https://www.udemy.com/terms/">Условия использования</a></li>
+                  <li><a href="https://www.udemy.com/terms/privacy/">Политика конфиденциальности</a></li>
+                  <li><a href="https://www.udemy.com/ru/sitemap/">Карта сайта</a></li>
+                  <li><a href="https://about.udemy.com/accessibility-statement?locale=ru-ru">Заявление о доступности</a></li>
+               </ul>
+            </div>
+            <button>
+               <img src="img/language_black_24dp.svg" alt="language">
+            </button>
+         </section>
+         <!-- Footer legal -->
+         <section class="ft-legal">
+            <a href="https://www.udemy.com/"><img width="91px" height="34px" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="footer-image"></a>
+            <span>© 2021 Udemy, Inc.</span>
+         </section>
+      </footer>
+      <script src="Javasript/main.js"></script>
+   </body>
+</html>
